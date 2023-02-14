@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import { Wrapper } from "./Wrapper/styled";
 
 export function PersonalHomepage() {
@@ -7,7 +8,7 @@ export function PersonalHomepage() {
                 <section />
                 <section />
                 <section />
-            <footer />
+            <Footer />
         </Wrapper>
     );
 }
