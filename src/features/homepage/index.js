@@ -1,11 +1,13 @@
+import { Wrapper } from "./Wrapper/styled";
+
 export function PersonalHomepage() {
     return (
-        <div className="Wrapper">
+        <Wrapper>
             <header />
                 <section />
                 <section />
                 <section />
             <footer />
-        </div>
+        </Wrapper>
     );
 }
