@@ -13,6 +13,18 @@ It's deployed on GH-Pages so you can check it here -> [Personal-Homepage](https:
 That's how it's look like.
 ![homepage demo](previev.png)
 
+## Technologies used in project
+
+- React
+- Redux (toolkit)
+- Redux Saga
+- JSX
+- HTML
+- styledComponents
+- CSS
+- Fetch
+- Axios
+
 ## Available Scripts
 
 In the project directory, you can run:
