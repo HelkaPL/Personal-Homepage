@@ -4,6 +4,7 @@ import Section from "./Section";
 import { Wrapper } from "./Wrapper/styled";
 import { myData } from "./myData";
 import { ThemeSwitch } from "../../common/ThemeSwitch";
+import Portfolio from "./Portfolio";
 
 export function PersonalHomepage() {
     return (
@@ -12,7 +13,7 @@ export function PersonalHomepage() {
             <Header />
             <Section title="My skillset includes 🛠️" skills={myData.currentSkills} />
             <Section title="What I want to learn next 🚀" skills={myData.skillsToLearn} />
-            <section />
+            <Portfolio />
             <Footer />
         </Wrapper>
     );
