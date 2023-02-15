@@ -11,7 +11,15 @@ const colorNames = {
     doveGray: "#6D6D6D",
 }
 
+const common = {
+    breakpoints: {
+        mobileMax: "767px",
+    },
+}
+
+
 export const themeLight = {
+    ...common,
     colors: {
         primary: colorNames.cornflowerBlue,
         textPrimary: colorNames.blackText,
@@ -31,6 +39,7 @@ export const themeLight = {
 };
 
 export const themeDark = {
+    ...common,
     colors: {
         primary: colorNames.dodgerBlue,
         textPrimary: colorNames.white,
