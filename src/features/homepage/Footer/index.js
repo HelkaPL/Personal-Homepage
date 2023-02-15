@@ -3,7 +3,8 @@ import { ReactComponent as Github } from "../images/icons/github.svg";
 import { ReactComponent as Facebook } from "../images/icons/facebook.svg";
 import { ReactComponent as Instagram } from "../images/icons/instagram.svg";
 import { ReactComponent as Linkedin } from "../images/icons/linkedin.svg";
-const email = "jakubhelizanowicz@gmail.com";
+import { myData } from "../myData";
+const email = myData.email;
 
 const Footer = () => (
     <>
