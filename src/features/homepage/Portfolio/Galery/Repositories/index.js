@@ -15,7 +15,7 @@ export const Repositories = ({ repositories }) => {
             {repositories.map(({ id, name, description, html_url, homepage }) => (
                 <Container key={id}>
                     <Title>{name}</Title>
-                    <Description>{description}</Description>
+                    <Description>{description || "No description"}</Description>
                     <LinkContainer>
                         <Text>Demo:</Text>
                         <StyledLink target="_blank" rel="noreferrer" href={homepage}>Visit page</StyledLink>
