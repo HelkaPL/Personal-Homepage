@@ -4,7 +4,7 @@ import { themeDark, themeLight } from './theme';
 
 
 function App() {
-const isDarkTheme = "false";
+const isDarkTheme = false;
   return (
     <ThemeProvider theme={isDarkTheme ? themeDark : themeLight}>
       <PersonalHomepage />
