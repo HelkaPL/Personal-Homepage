@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: inherit;
     }
     body {
-    background: #FBFBFE;
+    background: ${({ theme }) => theme.colors.background.site};
     font-family: 'Inter', sans-serif;
     word-break: break-word;
     }
