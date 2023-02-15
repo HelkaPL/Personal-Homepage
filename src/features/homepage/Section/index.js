@@ -1,4 +1,4 @@
-import { Item, ItemList, StyledSection, Title } from "./styled";
+import { BulletMark, Item, ItemList, StyledSection, Title } from "./styled";
 
 const Section = ({ title, skills }) => (
     <StyledSection>
@@ -6,6 +6,7 @@ const Section = ({ title, skills }) => (
         <ItemList>
             {skills.map((skill) =>
             <Item key={skill}>
+                <BulletMark />
                 {skill}
             </Item>
             )}

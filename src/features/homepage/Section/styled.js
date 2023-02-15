@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ReactComponent as Bullet } from "../images/icons/bullet.svg";
 
 export const StyledSection = styled.div`
     margin: 0 auto 72px auto;
@@ -23,8 +24,9 @@ export const Title = styled.h2`
 export const ItemList = styled.ul`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 8px 95px;
-    padding: 32px 0 0 0;
+    grid-gap: 8px 105px;
+    margin: 0;
+    padding: 32px 0;
     list-style: none;
     font-size: 18px;
     letter-spacing: 0.05em;
@@ -35,4 +37,10 @@ export const Item = styled.li`
     display: flex;
     align-items: baseline;
     gap: 16px;
+    max-width: fit-content;
+`;
+
+export const BulletMark = styled(Bullet)`
+    min-width: 9px;
+    color: ${({ theme }) => theme.colors.primary};;
 `;
