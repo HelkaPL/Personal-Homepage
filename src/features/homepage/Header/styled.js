@@ -6,7 +6,7 @@ export const StyledHeader = styled.header`
     grid-template-columns: 1fr auto;
     gap: 66px;
     align-items: center;
-    margin: 120px 0 72px;
+    margin-bottom: 72px;
     max-width: 1032px;
 `;
 

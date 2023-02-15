@@ -2,7 +2,7 @@ const colorNames = {
     white: "#FFFFFF",
     BG_Light_Mode: "#FBFBFE",
     lightGrey: "#E5E5E5",
-    textSecondary: "6E7E91",
+    slateGray: "#6E7E91",
     blackText: "#252525",
     cornflowerBlue: "#0366D6",
     dodgerBlue: "#2188FF",
@@ -15,8 +15,16 @@ export const themeLight = {
         textPrimary: colorNames.blackText,
         site: {
             background: colorNames.BG_Light_Mode,
-            text: colorNames.textSecondary,
+            textSecondary: colorNames.slateGray,
         },
+        section: {
+            background: colorNames.white,
+        },
+        themeSwitch: {
+            background: colorNames.lightGrey,
+            icon: colorNames.slateGray,
+        }
+    
         
     },
 };
@@ -27,8 +35,15 @@ export const themeDark = {
         textPrimary: colorNames.white,
         site: {
             background: colorNames.blackText,
-            text: colorNames.white,
+            textSecondary: colorNames.white,
         },
+        section: {
+            background: colorNames.white,
+        },
+        themeSwitch: {
+            background: colorNames.lightGrey,
+            icon: colorNames.slateGray,
+        }
 
     },
 };
