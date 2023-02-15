@@ -1,9 +1,14 @@
+import { ThemeProvider } from 'styled-components';
 import { PersonalHomepage } from './features/homepage';
+import { themeDark, themeLight } from './theme';
 
 
 function App() {
+const isDarkTheme = "false";
   return (
-    <PersonalHomepage />
+    <ThemeProvider theme={isDarkTheme ? themeDark : themeLight}>
+      <PersonalHomepage />
+    </ThemeProvider>
   );
 }
 
