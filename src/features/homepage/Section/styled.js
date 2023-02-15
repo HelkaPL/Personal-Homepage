@@ -4,11 +4,11 @@ import { ReactComponent as Bullet } from "../images/icons/bullet.svg";
 export const StyledSection = styled.div`
     margin: 0 auto 72px auto;
     padding: 32px;
-    background-color: ${({ theme }) => theme.colors.section.background};
+    background-color: ${({ theme }) => theme.colors.background.section};
     max-height: fit-content;
     max-width: 1216px;
     box-shadow: 0px 16px 58px 0px #090A3308, 0px -2px 50px 0px #090A3305;
-    color: ${({ theme }) => theme.colors.site.textSecondary};
+    color: ${({ theme }) => theme.colors.textSecondary};
 `;
 export const Title = styled.h2`
     margin: 0;
@@ -27,6 +27,7 @@ export const ItemList = styled.ul`
     grid-gap: 8px 105px;
     margin: 0;
     padding: 32px 0;
+    color: ${({ theme }) => theme.colors.textSecondary};
     list-style: none;
     font-size: 18px;
     letter-spacing: 0.05em;

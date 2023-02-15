@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
 
 export const Caption = styled.h2`
     margin: 0;
-    color: ${({ theme }) => theme.colors.site.textSecondary};
+    color: ${({ theme }) => theme.colors.textSecondary};
     font-size: 12px;
     font-weight: 700;
     line-height: 1.3;

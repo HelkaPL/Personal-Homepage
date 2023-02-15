@@ -24,7 +24,7 @@ export const About = styled.div`
 `;
 
 export const PreName = styled.p`
-    color: ${({ theme }) => theme.colors.site.textSecondary};
+    color: ${({ theme }) => theme.colors.textSecondary};
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
@@ -34,6 +34,7 @@ export const PreName = styled.p`
 
 export const Name = styled.h1`
     margin-top: 0;
+    color: ${({ theme }) => theme.colors.textPrimary};
     font-weight: 900;
     font-size: 38px;
     line-height: 46px;
@@ -41,7 +42,7 @@ export const Name = styled.h1`
     `;
 
 export const Description = styled.p`
-    color: ${({ theme }) => theme.colors.site.textSecondary};
+    color: ${({ theme }) => theme.colors.textSecondary};
     font-size: 20px;
     line-height: 28px;
     letter-spacing: 0.05em; 

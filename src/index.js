@@ -2,8 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store } from './core/store';
-import { GlobalStyle } from './GlobalStyles';
-import App from './App';
+import App from './core/App';
 import reportWebVitals from './reportWebVitals';
 
 const container = document.getElementById('root');
@@ -12,7 +11,6 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <GlobalStyle />
       <App />
     </Provider>
   </React.StrictMode>

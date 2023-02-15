@@ -15,6 +15,7 @@ export const Button = styled.button`
     align-items: center;
     color: inherit;
     outline-offset: 8px;
+    color: ${({ theme }) => theme.colors.themeSwitch.text};
 `;
 
 export const Text = styled.span`
