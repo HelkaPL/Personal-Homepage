@@ -1,8 +1,8 @@
 import { Caption, Header, Info, Link, SocialsLinks, Wrapper } from "./styled";
-import { ReactComponent as Github } from "./icons/github.svg";
-import { ReactComponent as Facebook } from "./icons/facebook.svg";
-import { ReactComponent as Instagram } from "./icons/instagram.svg";
-import { ReactComponent as Linkedin } from "./icons/linkedin.svg";
+import { ReactComponent as Github } from "../images/icons/github.svg";
+import { ReactComponent as Facebook } from "../images/icons/facebook.svg";
+import { ReactComponent as Instagram } from "../images/icons/instagram.svg";
+import { ReactComponent as Linkedin } from "../images/icons/linkedin.svg";
 const email = "jakubhelizanowicz@gmail.com";
 
 const Footer = () => (
