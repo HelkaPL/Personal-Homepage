@@ -34,5 +34,10 @@ export const myData = {
         "Unit testing",
         "TypeScript",
         "JS classes",
-    ]
+    ],
+    github_link: "https://github.com/HelkaPL",
+    linkedIn_link: "https://www.linkedin.com/in/jakub-helizanowicz-0352abba/",
+    facebook_link: "https://www.facebook.com/HelkaPL/",
+    instagram_link: "https://www.instagram.com/helka223/",
+
 };

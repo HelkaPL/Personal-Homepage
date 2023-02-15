@@ -4,28 +4,27 @@ import { ReactComponent as Facebook } from "../images/icons/facebook.svg";
 import { ReactComponent as Instagram } from "../images/icons/instagram.svg";
 import { ReactComponent as Linkedin } from "../images/icons/linkedin.svg";
 import { myData } from "../myData";
-const email = myData.email;
 
 const Footer = () => (
     <>
         <Wrapper>
             <Caption >Let's talk!</Caption >
-            <Header href={`mailto:${email}`}>{email}</Header>
+            <Header href={`mailto:${myData.email}`}>{myData.email}</Header>
             <Info>
                 I'm always open to new projects whenever I have the time. If you have a website, dashboard or mobile app in mind and need some help to make your ideas come to life, feel free to conatct me 🤞
             </Info>
         </Wrapper>
         <SocialsLinks>
-            <Link target="_blank" rel="noreferrer" href="https://github.com/">
+            <Link target="_blank" rel="noreferrer" href={myData.github_link}>
                 <Github />
             </Link>
-            <Link target="_blank" rel="noreferrer" href="https://www.linkedin.com/">
+            <Link target="_blank" rel="noreferrer" href={myData.linkedIn_link}>
                 <Linkedin />
             </Link>
-            <Link target="_blank" rel="noreferrer" href="https://www.facebook.com/">
+            <Link target="_blank" rel="noreferrer" href={myData.facebook_link}>
                 <Facebook />
             </Link>
-            <Link target="_blank" rel="noreferrer" href="https://www.instagram.com/">
+            <Link target="_blank" rel="noreferrer" href={myData.instagram_link}>
                 <Instagram />
             </Link>
         </SocialsLinks>
