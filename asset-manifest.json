@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.js": "/Personal-Homepage/static/js/main.4d8d8996.js",
+    "static/js/787.5c39024c.chunk.js": "/Personal-Homepage/static/js/787.5c39024c.chunk.js",
+    "static/media/Jakub_Helizanowicz.jpg": "/Personal-Homepage/static/media/Jakub_Helizanowicz.9d08ec9f4e3e55face04.jpg",
+    "static/media/instagram.svg": "/Personal-Homepage/static/media/instagram.7de75724aae35d3b76033631eaef51dc.svg",
+    "static/media/sun.svg": "/Personal-Homepage/static/media/sun.821e32ab30a95d3bc5c912795b927cbc.svg",
+    "static/media/github.svg": "/Personal-Homepage/static/media/github.27d0b567d8264b8f70796a0060ffb344.svg",
+    "index.html": "/Personal-Homepage/index.html",
+    "static/media/Danger.svg": "/Personal-Homepage/static/media/Danger.15cbff468268331509cb26864d232d72.svg",
+    "static/media/linkedin.svg": "/Personal-Homepage/static/media/linkedin.33a1e357dc3412d3a3bf761cc3b61941.svg",
+    "static/media/message.svg": "/Personal-Homepage/static/media/message.a791c274a5ca6a7bba77c80d96c14056.svg",
+    "static/media/facebook.svg": "/Personal-Homepage/static/media/facebook.5e9e629620896548495aad983fdb208c.svg",
+    "static/media/spinner.svg": "/Personal-Homepage/static/media/spinner.8face60613a14587d8fbe570d07ee87c.svg",
+    "static/media/bullet.svg": "/Personal-Homepage/static/media/bullet.c28602c8be31d96b4a27bc3627dd6f6f.svg",
+    "main.4d8d8996.js.map": "/Personal-Homepage/static/js/main.4d8d8996.js.map",
+    "787.5c39024c.chunk.js.map": "/Personal-Homepage/static/js/787.5c39024c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.4d8d8996.js"
+  ]
+}
