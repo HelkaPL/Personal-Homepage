@@ -1,8 +1,17 @@
 import { configureStore } from '@reduxjs/toolkit';
-import themeSlice from '../common/ThemeSwitch/themeSlice';
+import createSagaMiddleware from "redux-saga";
+import themeReducer from '../common/themeSlice';
+import saga from "./saga";
 
-export const store = configureStore({
+const sagaMiddleware = createSagaMiddleware();
+
+const store = configureStore({
   reducer: {
-    theme: themeSlice,
+    theme: themeReducer,
   },
+  middleware: [sagaMiddleware],
 });
+
+sagaMiddleware.run(saga);
+
+export default store;

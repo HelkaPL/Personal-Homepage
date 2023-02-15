@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import { ThemeProvider } from 'styled-components';
-import { selectIsDarkTheme } from '../common/ThemeSwitch/themeSlice';
+import { selectIsDarkTheme } from '../common/themeSlice';
 import { PersonalHomepage } from '../features/homepage';
 import { GlobalStyle } from './GlobalStyles';
 import { themeDark, themeLight } from './theme';
