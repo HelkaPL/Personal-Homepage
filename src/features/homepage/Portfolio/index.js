@@ -1,8 +1,23 @@
+import { useSelector, useDispatch  } from "react-redux";
+import { useEffect } from "react";
 import { Header, Icon, StyledArticle, SubHeader } from "./styled";
 import { ReactComponent as Github } from "../images/icons/github.svg";
-import { Loading } from "./Galery/Loading";
+import { Galery } from "./Galery";
+import { fetchRepos, selectRepos, selectReposStatus } from "./Galery/galerySlice";
 
-const Portfolio = () => (
+
+
+const Portfolio = () => {
+    const dispatch = useDispatch();
+
+    const reposStatus = useSelector(selectReposStatus);
+    const repositories = useSelector(selectRepos);
+
+    useEffect(() => {
+        dispatch(fetchRepos());
+    }, [dispatch]);
+
+    return (
     <>
         <StyledArticle>
             <Icon>
@@ -11,8 +26,10 @@ const Portfolio = () => (
             <Header>Portfolio</Header>
             <SubHeader>My recent projects</SubHeader>
         </StyledArticle>
-        <Loading />
+        <Galery
+            status={reposStatus}
+            repositories={repositories} />
     </>
-);
+)};
 
 export default Portfolio;
