@@ -8,6 +8,14 @@ export const StyledHeader = styled.header`
     align-items: center;
     margin-bottom: 72px;
     max-width: 1032px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
+                display: flex;
+                flex-flow: column wrap;
+                align-items: baseline;
+                gap: 0px;
+                margin-bottom: 48px;
+            }
 `;
 
 export const HeroImage = styled.img`
@@ -15,12 +23,20 @@ export const HeroImage = styled.img`
     width: 384px;
     height: 384px;
     border-radius: 50%;
+    
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
+        width: 132px;
+        height: 132px;
+    }
 `;
 
 export const About = styled.div`
     margin: 52px 0 73px 0;
     font-size: 36px;
-    
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
+        margin: 0;
+    }
 `;
 
 export const PreName = styled.p`
@@ -39,7 +55,12 @@ export const Name = styled.h1`
     font-size: 38px;
     line-height: 46px;
     letter-spacing: 0.05em;
-    `;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
+        font-size: 22px;
+        line-height: 27px;
+    }
+`;
 
 export const Description = styled.p`
     color: ${({ theme }) => theme.colors.textSecondary};

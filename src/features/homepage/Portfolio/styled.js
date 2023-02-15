@@ -14,6 +14,11 @@ export const Icon = styled(Github)`
     width: 40px;
     height: 39.01px;
     color: ${({ theme }) => theme.colors.primary};
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
+                width: 32px;
+                height: 31.21px;
+            }
 `;
 
 export const Header = styled.h2`
@@ -23,6 +28,11 @@ export const Header = styled.h2`
     font-size: 30px;
     letter-spacing: 0.05em;
     line-height: 36px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
+                font-size: 18px;
+                line-height: 22px;
+            }
 `;
 
 export const SubHeader = styled.p`
@@ -32,4 +42,8 @@ export const SubHeader = styled.p`
     font-size: 20px;
     line-height: 140%;
     letter-spacing: 0.05em;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
+                font-size: 17px;
+            }
 `;

@@ -6,6 +6,11 @@ export const Wrapper = styled.div`
     gap: 24px;
     margin-top: 120px;
     max-width: 670px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
+        gap: 12px;
+        margin-top: 48px;
+    }
 `;
 
 export const Caption = styled.h2`
@@ -24,6 +29,11 @@ export const Header = styled.a`
     line-height: 39px;
     letter-spacing: 0.05em;
     text-decoration: none;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
+                font-size: 18px;
+                line-height: 22px;  
+            }
 `;
 
 export const Info = styled.p`
@@ -33,10 +43,19 @@ export const Info = styled.p`
     font-weight: 400;
     line-height: 1.4;
     letter-spacing: 0.05em;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
+                font-size: 14px;
+                line-height: 17px;  
+            }
 `;
 
 export const SocialsLinks = styled.div`
     margin-top: 56px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
+        margin-top: 40px;
+    }
 `;
 
 export const Link = styled.a`
@@ -46,4 +65,10 @@ export const Link = styled.a`
     height: 48px;
     color: ${({ theme }) => theme.colors.textPrimary};
     cursor: pointer;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
+                margin-right: 16px;
+                width: 32px;
+                height: 32px;
+            }
 `;

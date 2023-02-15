@@ -9,6 +9,10 @@ export const StyledSection = styled.div`
     max-width: 1216px;
     box-shadow: 0px 16px 58px 0px #090A3308, 0px -2px 50px 0px #090A3305;
     color: ${({ theme }) => theme.colors.textSecondary};
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
+                padding: 16px;
+                margin-bottom: 48px;
+            }
 `;
 export const Title = styled.h2`
     margin: 0;
@@ -19,6 +23,13 @@ export const Title = styled.h2`
     font-size: 30px;
     line-height: 36px;
     letter-spacing: 0.05em;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
+                padding-bottom: 12px;
+                font-size: 18px;
+                line-height: 22px;
+            }
+    
 `;
 
 export const ItemList = styled.ul`
@@ -32,6 +43,13 @@ export const ItemList = styled.ul`
     font-size: 18px;
     letter-spacing: 0.05em;
     line-height: 140%;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
+                grid-template-columns: 1fr;
+                padding: 12px 0;
+                font-size: 14px;
+                line-height: 17px;
+            }
 `;
 
 export const Item = styled.li`
