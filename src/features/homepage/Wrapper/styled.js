@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
     margin: 0 auto;
-    padding-top: 120px;
+    padding: 120px 0;
     max-width: 1216px;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
