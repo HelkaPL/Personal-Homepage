@@ -30,6 +30,10 @@ export const Header = styled.a`
     letter-spacing: 0.05em;
     text-decoration: none;
 
+    &:hover {
+        color: ${({ theme }) => theme.colors.primary};
+    }
+
     @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
                 font-size: 18px;
                 line-height: 22px;  
@@ -65,6 +69,10 @@ export const Link = styled.a`
     height: 48px;
     color: ${({ theme }) => theme.colors.textPrimary};
     cursor: pointer;
+
+    &:hover {
+        color: ${({ theme }) => theme.colors.primary};
+    }
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
                 margin-right: 16px;
