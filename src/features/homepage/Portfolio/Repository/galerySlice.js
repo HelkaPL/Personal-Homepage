@@ -7,18 +7,16 @@ const galerySlice = createSlice({
         status: "loading",
     },
     reducers: {
-        fetchRepos: () => ({
-            repositories: null,
-            status: "loading",
-        }),
+        fetchRepos: (state) => {
+            state.status = "loading";
+        },
         fetchReposSuccess: (_, {payload: repositories}) => ({
             repositories,
             status: "success",
         }),
-        fetchReposError: () => ({
-            repositories: null,
-            status: "error",
-        }),
+        fetchReposError: (state) => {
+            state.status = "error";
+        },
     },
 });
 
