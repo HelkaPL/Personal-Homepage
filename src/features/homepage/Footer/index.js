@@ -15,16 +15,16 @@ const Footer = () => (
             </Info>
         </Wrapper>
         <SocialsLinks>
-            <Link target="_blank" rel="noreferrer" href={myData.github_link}>
+            <Link target="_blank" rel="noreferrer" href={myData.githubLink}>
                 <Github />
             </Link>
-            <Link target="_blank" rel="noreferrer" href={myData.linkedIn_link}>
+            <Link target="_blank" rel="noreferrer" href={myData.linkedInLink}>
                 <Linkedin />
             </Link>
-            <Link target="_blank" rel="noreferrer" href={myData.facebook_link}>
+            <Link target="_blank" rel="noreferrer" href={myData.facebookLink}>
                 <Facebook />
             </Link>
-            <Link target="_blank" rel="noreferrer" href={myData.instagram_link}>
+            <Link target="_blank" rel="noreferrer" href={myData.instagramLink}>
                 <Instagram />
             </Link>
         </SocialsLinks>

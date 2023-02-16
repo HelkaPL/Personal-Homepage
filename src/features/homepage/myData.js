@@ -35,9 +35,9 @@ export const myData = {
         "TypeScript",
         "JS classes",
     ],
-    github_link: "https://github.com/HelkaPL",
-    linkedIn_link: "https://www.linkedin.com/in/jakub-helizanowicz-0352abba/",
-    facebook_link: "https://www.facebook.com/HelkaPL/",
-    instagram_link: "https://www.instagram.com/helka223/",
+    githubLink: "https://github.com/HelkaPL",
+    linkedInLink: "https://www.linkedin.com/in/jakub-helizanowicz-0352abba/",
+    facebookLink: "https://www.facebook.com/HelkaPL/",
+    instagramLink: "https://www.instagram.com/helka223/",
 
 };
