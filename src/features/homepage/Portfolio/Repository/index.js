@@ -2,7 +2,7 @@ import { ErrorPage } from "./ErrorPage";
 import { Loading } from "./Loading";
 import { Repositories } from "./Repositories";
 
-export const Galery = ({ status, repositories }) => {
+export const Repository = ({ status, repositories }) => {
     switch (status) {
         case "loading":
             return <Loading />;

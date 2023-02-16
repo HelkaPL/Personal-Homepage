@@ -2,8 +2,8 @@ import { useSelector, useDispatch  } from "react-redux";
 import { useEffect } from "react";
 import { Header, Icon, StyledArticle, SubHeader } from "./styled";
 import { ReactComponent as Github } from "../images/icons/github.svg";
-import { Galery } from "./Galery";
-import { fetchRepos, selectRepos, selectReposStatus } from "./Galery/galerySlice";
+import { Repository } from "./Repository";
+import { fetchRepos, selectRepos, selectReposStatus } from "./Repository/galerySlice";
 
 
 
@@ -26,7 +26,7 @@ const Portfolio = () => {
             <Header>Portfolio</Header>
             <SubHeader>My recent projects</SubHeader>
         </StyledArticle>
-        <Galery
+        <Repository
             status={reposStatus}
             repositories={repositories} />
     </>
