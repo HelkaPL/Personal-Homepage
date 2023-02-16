@@ -10,12 +10,12 @@ export const StyledHeader = styled.header`
     max-width: 1032px;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}) {
-                display: flex;
-                flex-flow: column wrap;
-                align-items: baseline;
-                gap: 0px;
-                margin-bottom: 48px;
-            }
+        display: flex;
+        flex-flow: column wrap;
+        align-items: baseline;
+        gap: 0px;
+        margin-bottom: 48px;
+    }
 `;
 
 export const HeroImage = styled.img`
